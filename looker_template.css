@@ -65,6 +65,7 @@ table.reportTable td {
   background-color: #163300;
   font-weight: bold;
   padding: 5px;
+  color: white;
 }
 
 .indexCell.transposed {
