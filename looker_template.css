@@ -62,7 +62,7 @@ table.reportTable td {
 
 .headerCell {
   border-bottom: 1px solid #163300 !important;
-  background-color: #163300
+  background-color: #163300;
   font-weight: bold;
   padding: 5px;
 }
