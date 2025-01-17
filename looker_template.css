@@ -61,41 +61,41 @@
   }
   
   .headerCell.dimension {
-    background-color: #1E2C5B;
+    background-color: #163300;
     border-right: 1px solid #BDC3C7; 
     color: white;
 
   }
   
   .headerCell.pivot {
-    background-color: #1E2C5B;
+    background-color: #163300;
     border-right: 1px solid #BDC3C7; 
     color: white;
 
   }
   
   .headerCell.measure {
-    background-color: #1E2C5B;
+    background-color: #163300;
     border-left: 1px solid #BDC3C7; 
     color: white;
 
   }
   
   .headerCell.measure.calculation {
-    background-color: #1E2C5B;
+    background-color: #163300;
     border-left: 1px solid #BDC3C7;
     color: white;
 
   }
   
   .headerCell.transposed.dimension {
-    background-color: #1E2C5B;
+    background-color: #163300;
     color: white;
 
   }
   
   .headerCell.transposed.dimension.merged {
-    background-color: #1E2C5B !important;
+    background-color: #163300 !important;
     color: white;
 
   }
