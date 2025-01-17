@@ -1,170 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/roboto-v20-latin-regular.woff2') format('woff2');
+}
 
 #tooltip {
-    position: absolute;
-    width: auto;
-    height: auto;
-    padding: 5px;
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    pointer-events: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    z-index: 2;
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  background-color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  z-index: 2;
 }
 
 .tooltipTable {
-    font-family: 'Roboto', sans-serif;
-    border: 0px;
-    border-collapse: collapse;
-    table-layout: auto;
+  font-family: 'Roboto', sans-serif;
+  border: 0px;
+  border-collapse: collapse;
+  table-layout: auto;
 }
 
 .focus {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .hover {
-    background-color: #9FE870;
+  background-color: #ffffbb;
 }
 
 .reportTable {
-    font-family: 'Roboto', sans-serif;
-    color: #0E0F0C;
-    border-collapse: collapse;
-    border-spacing: 3px;
-    table-layout: fixed;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+  border-spacing: 3px;
 }
 
-th.headerCell {
-    background-color: #163300;
-    color: white;
-    padding: 5px;
-    border-bottom: 1px solid #BDC3C7;
+table.reportTable th {
+  border: 1px solid #cccccc;
+  border-bottom: 1px solid #000000 !important;
+  padding: 5px;
 }
 
-.headerCell.dimension {
-    background-color: #163300;
-    border-right: 1px solid #BDC3C7; 
-    color: white;
+table.reportTable td {
+  vertical-align: super;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
 }
 
-.headerCell.pivot {
-    background-color: #163300;
-    border-right: 1px solid #BDC3C7; 
-    color: white;
-}
-
-.headerCell.measure {
-    background-color: #163300;
-    border-left: 1px solid #BDC3C7; 
-    color: white;
-}
-
-.headerCell.measure.calculation {
-    background-color: #163300;
-    border-left: 1px solid #BDC3C7;
-    color: white;
-}
-
-.headerCell.transposed.dimension {
-    background-color: #163300;
-    color: white;
-}
-
-.headerCell.transposed.dimension.merged {
-    background-color: #163300 !important;
-    color: white;
-}
-
-.rowCell {
-    vertical-align: super;
-    padding-left: 5px;
-    border-bottom: 1px solid #BDC3C7; 
-}
-
-.rowCell.merged {
-    background-color: #ffffff !important;
+.headerCell {
+  border-bottom: 1px solid #163300 !important;
+  font-weight: bold;
+  padding: 5px;
 }
 
 .indexCell.transposed {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.indexCell.transposed.pivot {
-    background-color: #ccd8e4;
+.indexCell.transposed.merged {
+  background-color: #ffffff !important;
 }
 
-.indexCell.transposed.dimension {
-    background-color: #e4ecf3;
-}
-
-.indexCell.transposed.measure {
-    background-color: #e4d0bd;
-}
-
-.indexCell.transposed.calculation {
-    background-color: #c9dfc5;
-}
-
-.indexCell.transposed.pivot.merged {
-    background-color: #ccd8e4 !important;
-}
-
-.indexCell.transposed.dimension.merged {
-    background-color: #e4ecf3 !important;
-}
-
-.indexCell.transposed.measure.merged {
-    background-color: #e4d0bd !important;
-}
-
-.indexCell.transposed.calculation.merged {
-    background-color: #c9dfc5 !important;
+.rowCell {
+  vertical-align: super;
+  padding-left: 5px;
 }
 
 .nonNumeric {
-    text-align: left;
+  text-align: left;
 }
 
 .numeric {
-    text-align: right;
+  text-align: right;
 }
 
 .negative {
-    color: red;
+  color: red;
 }
 
 .estimate {
-    color: darkgray !important;
+  color: darkgray !important;
 }
 
 .singleIndex {
-    padding-left: 15px !important;
+  padding-left: 15px !important;
 }
 
 .subtotal {
-    font-style: italic;
-    font-weight: bold;
-    background: #D3D3D3;
+  font-style: italic;
+  font-weight: bold;
+  background: #d3d3d3;
 }
 
 .total {
-    border-top: 2px solid #696969 !important;
-    font-weight: bold !important;
+  border-top: 2px solid #000000 !important;
+  font-weight: bold !important;
 }
 
 .total.transposed {
-    border-top: 0px !important;
-    background: #D3D3D3;
+  border-top: 0px !important;
+  background: #d3d3d3;
 }
 
 .rectElem.animated {
-    font-family: 'Roboto', sans-serif;
-    margin: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin: 4px;
 }
